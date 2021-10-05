@@ -1,15 +1,15 @@
-﻿using System;
+﻿using MovieAPI.Models.Base;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace movieAPI.Models
 {
-    public class Rating
+    public class Rating : BaseEntity
     {
-        public int Id { get; set; }
         public int Score { get; set; }
-        public int MovieId { get; set; }
-        public Movie Movie { get; set; }
+        public int MediaId { get; set; }
+        public Media Media { get; set; }
     }
 }

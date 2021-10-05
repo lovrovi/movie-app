@@ -1,10 +1,10 @@
 ﻿namespace movieAPI.Models
 {
-    public class ActorMovie
+    public class ActorMedia
     {
         public int ActorId { get; set; }
         public Actor Actor { get; set; }
-        public int MovieId { get; set; }
-        public Movie Movie { get; set; }
+        public int MediaId { get; set; }
+        public Media Media { get; set; }
     }
 }

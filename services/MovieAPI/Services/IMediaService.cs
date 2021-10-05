@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace MovieAPI.Services
 {
-    public interface IMovieService
+    public interface IMediaService
     {
-        Task<IEnumerable<MovieResponse>> GetMovies(string search, int num);
+        Task<IEnumerable<MediaResponse>> GetMedias(string search, int num, int mediaType);
     }
 }

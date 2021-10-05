@@ -1,0 +1,17 @@
+.mediaCardContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.showMore{
+    width:100px;
+    background-color: red;
+    border: 1px solid grey;
+    text-align: center;
+}
+.medias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

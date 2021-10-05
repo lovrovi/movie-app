@@ -1,11 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using MovieAPI.Models.Base;
+using System.Collections.Generic;
 
 namespace movieAPI.Models
 {
-    public class Actor
+    public class Actor : BaseEntity
     {
-        public int Id { get; set; }
         public string Name { get; set; }
-        public IEnumerable<ActorMovie> ActorMovie { get; set; }
+        public IEnumerable<ActorMedia> ActorMedia { get; set; }
     }
 }

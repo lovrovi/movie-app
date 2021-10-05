@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using movieAPI.Data;
@@ -9,9 +10,10 @@ using movieAPI.Data;
 namespace MovieAPI.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20211005162514_seed shows")]
+    partial class seedshows
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -478,7 +480,7 @@ namespace MovieAPI.Data.Migrations
                             Id = 13,
                             AvgRating = 2.0,
                             Description = "A comedy show",
-                            Image = "show.png",
+                            Image = "image.jpg",
                             MediaType = 2,
                             ReleaseDate = new DateTime(2000, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Show 1"
@@ -488,7 +490,7 @@ namespace MovieAPI.Data.Migrations
                             Id = 14,
                             AvgRating = 4.5,
                             Description = "A comedy show",
-                            Image = "show.png",
+                            Image = "image.jpg",
                             MediaType = 2,
                             ReleaseDate = new DateTime(1995, 5, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Show 2"
@@ -498,7 +500,7 @@ namespace MovieAPI.Data.Migrations
                             Id = 15,
                             AvgRating = 3.5,
                             Description = "A comedy show",
-                            Image = "show.png",
+                            Image = "image.jpg",
                             MediaType = 2,
                             ReleaseDate = new DateTime(2010, 3, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Show 3"
@@ -508,7 +510,7 @@ namespace MovieAPI.Data.Migrations
                             Id = 16,
                             AvgRating = 3.5,
                             Description = "A comedy show",
-                            Image = "show.png",
+                            Image = "image.jpg",
                             MediaType = 2,
                             ReleaseDate = new DateTime(2020, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Show 4"
@@ -518,7 +520,7 @@ namespace MovieAPI.Data.Migrations
                             Id = 17,
                             AvgRating = 4.5,
                             Description = "A comedy show",
-                            Image = "show.png",
+                            Image = "image.jpg",
                             MediaType = 2,
                             ReleaseDate = new DateTime(2008, 7, 7, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Show 5"
@@ -528,7 +530,7 @@ namespace MovieAPI.Data.Migrations
                             Id = 18,
                             AvgRating = 1.5,
                             Description = "A comedy show",
-                            Image = "show.png",
+                            Image = "image.jpg",
                             MediaType = 2,
                             ReleaseDate = new DateTime(2001, 7, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Show 6"
@@ -538,7 +540,7 @@ namespace MovieAPI.Data.Migrations
                             Id = 19,
                             AvgRating = 2.0,
                             Description = "A comedy show",
-                            Image = "show.png",
+                            Image = "image.jpg",
                             MediaType = 2,
                             ReleaseDate = new DateTime(1994, 8, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Show 7"
@@ -548,7 +550,7 @@ namespace MovieAPI.Data.Migrations
                             Id = 20,
                             AvgRating = 4.5,
                             Description = "A comedy show",
-                            Image = "show.png",
+                            Image = "image.jpg",
                             MediaType = 2,
                             ReleaseDate = new DateTime(1990, 9, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Show 8"
@@ -558,7 +560,7 @@ namespace MovieAPI.Data.Migrations
                             Id = 21,
                             AvgRating = 2.5,
                             Description = "A comedy show",
-                            Image = "show.png",
+                            Image = "image.jpg",
                             MediaType = 2,
                             ReleaseDate = new DateTime(1978, 10, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Show 9"
@@ -568,7 +570,7 @@ namespace MovieAPI.Data.Migrations
                             Id = 22,
                             AvgRating = 2.5,
                             Description = "A comedy show",
-                            Image = "show.png",
+                            Image = "image.jpg",
                             MediaType = 2,
                             ReleaseDate = new DateTime(2010, 11, 24, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Show 10"
@@ -578,7 +580,7 @@ namespace MovieAPI.Data.Migrations
                             Id = 23,
                             AvgRating = 4.0,
                             Description = "A comedy show",
-                            Image = "show.png",
+                            Image = "image.jpg",
                             MediaType = 2,
                             ReleaseDate = new DateTime(2021, 4, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Show 11"
@@ -588,7 +590,7 @@ namespace MovieAPI.Data.Migrations
                             Id = 24,
                             AvgRating = 3.0,
                             Description = "A comedy show",
-                            Image = "show.png",
+                            Image = "image.jpg",
                             MediaType = 2,
                             ReleaseDate = new DateTime(2020, 7, 30, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Show 12"

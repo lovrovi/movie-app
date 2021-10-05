@@ -29,7 +29,8 @@ namespace MovieAPI
             });
             services.AddDbContext<AppDbContext>(options => options.UseNpgsql(Configuration.GetConnectionString("DBConnection")));
             services.AddControllers();
-            services.AddScoped<IMovieService, MovieService>();
+            services.AddScoped<IMediaService, MediaService>();
+            services.AddScoped<IRatingService, RatingService>();
 
             services.AddSwaggerGen(c =>
             {
